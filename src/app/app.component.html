@@ -3,7 +3,7 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <input [ngModel]="displayValue | awesomePhone: replaceRegex" 
-  (ngModelChange)="onValueChange($event)" type="text" maxlength="13"/>
+  <input appOnlyNumber [ngModel]="displayValue | awesomePhone: replaceRegex" 
+  (ngModelChange)="onValueChange($event)" type="tel" maxlength="13"/>
   <div>Actual Value: {{actualValue}}</div>
 </div>

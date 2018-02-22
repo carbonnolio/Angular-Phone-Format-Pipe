@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AwesomePhonePipe } from './awesome-phone.pipe';
+import { OnlyNumberDirective } from './only-number.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AwesomePhonePipe
+    AwesomePhonePipe,
+    OnlyNumberDirective
   ],
   imports: [
     BrowserModule,
