@@ -5,8 +5,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class AwesomePhonePipe implements PipeTransform {
 
-  preservedVal: string;
-
   transform(value: string, replaceRegexp: RegExp): any {
 
     if (value && replaceRegexp) {
