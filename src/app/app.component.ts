@@ -14,13 +14,9 @@ export class AppComponent {
   displayValue: string;
   replaceRegex = /[^\d\s]/gi;
 
-  onValueChange(event: string) {
+  onValueChange(newVal: string) {
 
-    const newActualVal = event.replace(this.replaceRegex, '');
-
-    if (newActualVal !== this.actualValue) {
-      this.displayValue = event;
-      this.actualValue = event.replace(this.replaceRegex, '');
-    }
+    this.displayValue = newVal;
+    this.actualValue = newVal.replace(this.replaceRegex, '');
   }
 }
